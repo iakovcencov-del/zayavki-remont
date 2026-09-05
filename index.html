@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Заявки на ремонт — Санкт-Петербург</title>
+<style>
+  :root{
+    --fon:#fbfaf8; --tekst:#1c1b19; --tusklo:#57534e;
+    --linia:#e5e1db; --akcent:#b4531f; --karta:#ffffff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--fon);color:var(--tekst);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;}
+  .obolochka{max-width:720px;margin:0 auto;padding:32px 20px 64px}
+  header{border-bottom:2px solid var(--tekst);padding-bottom:20px;margin-bottom:32px}
+  h1{font-size:28px;line-height:1.25;margin:0 0 10px;letter-spacing:-0.01em}
+  .podzag{color:var(--tusklo);margin:0}
+  h2{font-size:20px;margin:36px 0 12px;letter-spacing:-0.01em}
+  h3{font-size:16px;margin:22px 0 6px}
+  p,li{margin:0 0 12px}
+  ul,ol{padding-left:22px}
+  .cena{background:var(--karta);border:1px solid var(--linia);border-radius:10px;
+    padding:20px 22px;margin:20px 0}
+  .cena .summa{font-size:30px;font-weight:700;letter-spacing:-0.02em}
+  .cena .k-summe{color:var(--tusklo);font-size:15px}
+  .shagi{counter-reset:sh;list-style:none;padding:0}
+  .shagi li{counter-increment:sh;position:relative;padding-left:38px;margin-bottom:14px}
+  .shagi li::before{content:counter(sh);position:absolute;left:0;top:1px;
+    width:26px;height:26px;border-radius:50%;background:var(--akcent);color:#fff;
+    font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center}
+  .rekvizity{background:var(--karta);border:1px solid var(--linia);border-radius:10px;
+    padding:18px 22px}
+  .rekvizity dl{margin:0;display:grid;grid-template-columns:minmax(120px,auto) 1fr;
+    gap:8px 18px}
+  .rekvizity dt{color:var(--tusklo)}
+  .rekvizity dd{margin:0}
+  a{color:var(--akcent)}
+  footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--linia);
+    color:var(--tusklo);font-size:14px}
+  @media (prefers-color-scheme: dark){
+    :root{--fon:#171614;--tekst:#f2efe9;--tusklo:#a8a29a;--linia:#33302b;
+      --akcent:#e8834a;--karta:#201e1b;}
+  }
+</style>
+</head>
+<body>
+<div class="obolochka">
+
+<header>
+  <h1>Заявки на ремонт в Санкт-Петербурге</h1>
+  <p class="podzag">Передаём мастерам и бригадам заявки от людей, которые
+  сами ищут исполнителя.</p>
+</header>
+
+<h2>Что это за услуга</h2>
+<p>Люди в Петербурге ищут мастеров: пишут в открытых чатах своих домов
+и районов, обращаются к нам напрямую через телеграм-бот. Мы собираем такие
+обращения, уточняем задачу и передаём её мастеру, который берётся за работу.</p>
+<p>Мы продаём сведения о заявке: что человеку нужно, в каком районе, когда
+и его телефон. Мы не ищем клиентов от имени мастера, не участвуем в его
+сделке и не берём процент с неё.</p>
+
+<div class="cena">
+  <div class="summa">1 200 ₽</div>
+  <div class="k-summe">одна заявка. Первая — бесплатно, чтобы вы посмотрели,
+  живые ли у нас заявки.</div>
+</div>
+
+<h2>Как это работает</h2>
+<ol class="shagi">
+  <li>Мастер открывает бота, читает правила и принимает их.</li>
+  <li>Новые заявки приходят ему сами — без телефона заказчика.</li>
+  <li>Мастер нажимает «Беру». Деньги в этот момент ещё не списываются.</li>
+  <li>Бот спрашивает заказчика, на связи ли он и ждёт ли звонка.</li>
+  <li>Заказчик подтвердил — списываем 1 200 ₽ и отдаём телефон.
+  Не подтвердил — заявка возвращается другим, деньги не тронуты.</li>
+</ol>
+
+<h2 id="oferta">Публичная оферта: условия оказания услуги</h2>
+<p>Этот раздел — публичная оферта самозанятого Ченцова Иакова (ИНН 783902267939)
+на оказание информационной услуги: передачу сведений о заявке на ремонт.
+Оплата счёта или принятие правил в боте означает согласие с этими условиями.</p>
+<p><strong>Когда услуга считается оказанной.</strong> В момент, когда бот
+передал мастеру телефон заказчика. До этого момента деньги со счёта мастера
+не списываются.</p>
+<p><strong>Оплата.</strong> Мастер вносит деньги на свой счёт в боте заранее
+и тратит их по мере того, как берёт заявки. Неизрасходованные деньги лежат
+на счету нетронутыми.</p>
+
+<h2>Возврат</h2>
+<p>Деньги возвращаются на счёт мастера, если заявка оказалась пустой:</p>
+<ul>
+  <li>заказчик не отвечает на звонки и подтвердил это нам;</li>
+  <li>заказчик передумал или уже нашёл исполнителя;</li>
+  <li>работа оказалась не той, что была описана в заявке.</li>
+</ul>
+<p>Спор решает ответ самого заказчика: через сутки после передачи телефона
+бот спрашивает его, как всё прошло.</p>
+<p>Возврат не делается, если мастер созвонился с заказчиком, но они не сошлись
+в цене или сроках, если мастер не позвонил или передумал ехать.</p>
+<p><strong>Неизрасходованный остаток счёта возвращается по первой просьбе</strong>
+в течение трёх рабочих дней — тем же способом, которым он был внесён.</p>
+
+<h2>За что мы не отвечаем</h2>
+<p>За качество работ, сроки и расчёты между мастером и заказчиком.
+Договариваются и рассчитываются они напрямую между собой.</p>
+
+<h2>Персональные данные</h2>
+<p>Телефон заказчика передаётся мастеру только с письменного согласия самого
+заказчика и только для этой заявки. Согласие хранится вместе с датой
+и временем, и заказчик может отозвать его в любой момент — для этого
+достаточно написать боту слово «отзываю».</p>
+
+<h2>Реквизиты и контакты</h2>
+<div class="rekvizity">
+  <dl>
+    <dt>Исполнитель</dt><dd>Ченцов Иаков, самозанятый (налог
+      на профессиональный доход)</dd>
+    <dt>ИНН</dt><dd>783902267939</dd>
+    <dt>Город</dt><dd>Санкт-Петербург</dd>
+    <dt>Связь</dt><dd>телеграм-бот
+      <a href="https://t.me/remont_spb_zayavki_bot">@remont_spb_zayavki_bot</a></dd>
+    <dt>Почта</dt><dd><a href="mailto:yashka97-97@mail.ru">yashka97-97@mail.ru</a></dd>
+  </dl>
+</div>
+
+<footer>
+  Санкт-Петербург, 2026. Оплата принимается через Robokassa; чек
+  формируется в приложении «Мой налог» и приходит покупателю.
+</footer>
+
+</div>
+</body>
+</html>
