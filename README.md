@@ -21,15 +21,27 @@
 `https://iakovcencov-del.github.io/zayavki-remont/`. Его и вписывать
 в форму Robokassa в поле «Ссылка на ваш ресурс».
 
-Машина сама выложить не смогла: публикация в интернет — внешнее действие,
-и оно остановлено до слова Иакова. Выкладка руками — три команды из папки
-`sayt`:
+**Выложена 05.09.2026 по слову Иакова «выкладывай».** Репозиторий
+`iakovcencov-del/zayavki-remont`, ветка `main`, Pages включены.
+Адрес: <https://iakovcencov-del.github.io/zayavki-remont/>.
+
+Правки на страницу вносятся так: поправить `index.html`, затем из папки
+`sayt` — `git add index.html && git commit -m "что поправили" && git push`.
+Через минуту страница обновится сама.
+
+Как выкладывалось в первый раз, на случай переезда:
 
     git init && git add index.html && git commit -m "Страница услуги"
     gh repo create zayavki-remont --public --source=. --push
     gh api -X POST repos/iakovcencov-del/zayavki-remont/pages -f "source[branch]=master" -f "source[path]=/"
 
 Если ветка называется `main`, в третьей команде поставить `main`.
+
+## Связь на странице
+
+По слову Иакова 05.09.2026 в реквизитах стоит его личный Телеграм
+`@chentsov01`, а не бот: модератору и заказчику нужен живой человек.
+Ник взят из его же сессии Телеграма, не по памяти.
 
 ## Что на странице открыто всем
 
